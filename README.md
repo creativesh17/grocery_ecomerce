@@ -66,7 +66,7 @@ This is an ecommerce project developed using #laravel #vuejs #vuex #livewire. Th
 
 > <br>
 > <img src="#" alt="alt text" width="50" height="50" > <br> 
-> <a href="#">Almas Khan</a> <br>
+> <a href="https://github.com/creativesh17">Almas Khan</a> <br>
 > Software Engineer ( Tech Park IT )
 > <br>
 > <br>
