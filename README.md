@@ -62,18 +62,11 @@ This is an ecommerce project developed using #laravel #vuejs #vuex #livewire. Th
 ## Contributors
 <br>
 
-> <br> 
-> <img src="https://github.com/Md-shefat-masum.png" alt="alt text" width="50" height="50" > <br> 
-> <a href="https://github.com/Md-shefat-masum">Muhammad Shefat Ullah Masum</a> <br>
-> Software Engineer ( Tech Park IT )
-> <br>
-> <br>
-
 <br>
 
 > <br>
-> <img src="https://github.com/Sajid-al-islam.png" alt="alt text" width="50" height="50" > <br> 
-> <a href="https://github.com/Sajid-al-islam">Muhammad Shefat Ullah Masum</a> <br>
+> <img src="#" alt="alt text" width="50" height="50" > <br> 
+> <a href="#">Almas Khan</a> <br>
 > Software Engineer ( Tech Park IT )
 > <br>
 > <br>
