@@ -25,21 +25,22 @@ class DatabaseSeeder extends Seeder
 
         Brand::flushEventListeners();
         Category::flushEventListeners();
-        Tag::flushEventListeners();
+        // Tag::flushEventListeners();
         Product::flushEventListeners();
         ProductImage::flushEventListeners();
 
         $this->call([
             BrandSeeder::class,
             CategorySeeder::class,
-            TagSeeder::class,
+            // TagSeeder::class,
             ProductSeeder::class,
             ProductImageSeeder::class,
             CategoryProductSeeder::class,
-            ProductTagSeeder::class,
-            ProductVariantSeeder::class,
-            ProductVariantValueSeeder::class,
-            ProductVariantValueProductSeeder::class
+            DiscountProductSeeder::class,
+            // ProductTagSeeder::class,
+            // ProductVariantSeeder::class,
+            // ProductVariantValueSeeder::class,
+            // ProductVariantValueProductSeeder::class
         ]);
 
 

@@ -19,44 +19,44 @@ class ProductVariantSeeder extends Seeder
         Schema::disableForeignKeyConstraints();
         ProductVariant::truncate();
 
-        ProductVariant::insert([
-            // 1
-            [
-                'title' => 'Size',
-                'creator' => 2,
-                'slug' => Carbon::now()->format('Ymds') . uniqid(5),
-            ],
-            // 2
-            [
-                'title' => 'Waist Size',
-                'creator' => 2,
-                'slug' => Carbon::now()->format('Ymds') . uniqid(5),
-            ],
-            // 3
-            [
-                'title' => 'Color',
-                'creator' => 2,
-                'slug' => Carbon::now()->format('Ymd') . uniqid(5),
-            ],
-            // 4
-            [
-                'title' => 'Fabric',
-                'creator' => 2,
-                'slug' => Carbon::now()->format('Ymd') . uniqid(5),
-            ],
-            // 5
-            [
-                'title' => 'Chest Size',
-                'creator' => 2,
-                'slug' => Carbon::now()->format('Ymds') . uniqid(5),
-            ],
-            // 6
-            [
-                'title' => 'Embellishment',
-                'creator' => 2,
-                'slug' => Carbon::now()->format('Ymds') . uniqid(5),
-            ],
-        ]);
+        // ProductVariant::insert([
+        //     // 1
+        //     [
+        //         'title' => 'Size',
+        //         'creator' => 2,
+        //         'slug' => Carbon::now()->format('Ymds') . uniqid(5),
+        //     ],
+        //     // 2
+        //     [
+        //         'title' => 'Waist Size',
+        //         'creator' => 2,
+        //         'slug' => Carbon::now()->format('Ymds') . uniqid(5),
+        //     ],
+        //     // 3
+        //     [
+        //         'title' => 'Color',
+        //         'creator' => 2,
+        //         'slug' => Carbon::now()->format('Ymd') . uniqid(5),
+        //     ],
+        //     // 4
+        //     [
+        //         'title' => 'Fabric',
+        //         'creator' => 2,
+        //         'slug' => Carbon::now()->format('Ymd') . uniqid(5),
+        //     ],
+        //     // 5
+        //     [
+        //         'title' => 'Chest Size',
+        //         'creator' => 2,
+        //         'slug' => Carbon::now()->format('Ymds') . uniqid(5),
+        //     ],
+        //     // 6
+        //     [
+        //         'title' => 'Embellishment',
+        //         'creator' => 2,
+        //         'slug' => Carbon::now()->format('Ymds') . uniqid(5),
+        //     ],
+        // ]);
 
 
         Schema::enableForeignKeyConstraints();

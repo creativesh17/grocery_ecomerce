@@ -523,6 +523,34 @@ class BrandSeeder extends Seeder
 		        'creator' => '1',
 		        'slug' => Str::slug('Teer'),
 		    ],
+            // 72
+        	[
+        		'name' => 'RFL',
+		        'url' => Str::slug('RFL'),
+		        'creator' => '1',
+		        'slug' => Str::slug('RFL'),
+		    ],
+            // 73
+        	[
+        		'name' => 'Rokomari Food Limited',
+		        'url' => Str::slug('Rokomari Food Limited'),
+		        'creator' => '1',
+		        'slug' => Str::slug('Rokomari Food Limited'),
+		    ],
+            // 74
+        	[
+        		'name' => 'Tradesworth Household Ltd',
+		        'url' => Str::slug('Tradesworth Household Ltd'),
+		        'creator' => '1',
+		        'slug' => Str::slug('Tradesworth Household Ltd'),
+		    ],
+            // 75
+        	[
+        		'name' => 'Borges',
+		        'url' => Str::slug('Borges'),
+		        'creator' => '1',
+		        'slug' => Str::slug('Borges'),
+		    ],
         ]);
 
 
