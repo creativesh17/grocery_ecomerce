@@ -379,6 +379,21 @@ class ProductImageSeeder extends Seeder
 		        'creator' => 1,
 		        'slug' => null,
 		    ],
+			// 
+			[
+        		'product_id' => 23,
+		        'image' => "uploads/product/25.jpeg",
+		        'alt' => null,
+		        'creator' => 1,
+		        'slug' => null,
+		    ],
+        	[
+        		'product_id' => 23,
+		        'image' => "uploads/product/25-a.jpeg",
+		        'alt' => null,
+		        'creator' => 1,
+		        'slug' => null,
+		    ],
 
         ]);
 

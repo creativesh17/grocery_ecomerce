@@ -22,6 +22,7 @@ class CategorySeeder extends Seeder
         Category::truncate();
 
         Category::insert([
+            
             // 1
         	[
         		'is_top_category' => 1,
@@ -42,6 +43,8 @@ class CategorySeeder extends Seeder
                 'created_at' => Carbon::now(),
                 'updated_at' => Carbon::now(),
         	],
+
+
             // 2
         	[
         		'is_top_category' => 1,

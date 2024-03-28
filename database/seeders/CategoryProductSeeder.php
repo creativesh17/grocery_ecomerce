@@ -366,6 +366,19 @@ class CategoryProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now(),
         ]);
+        // 
+        DB::table('category_product')->insert([
+            'category_id' => 18,
+            'product_id' => 23,
+            'created_at' => now(),
+            'updated_at' => now(),
+        ]);
+        DB::table('category_product')->insert([
+            'category_id' => 35,
+            'product_id' => 23,
+            'created_at' => now(),
+            'updated_at' => now(),
+        ]);
 
 
 

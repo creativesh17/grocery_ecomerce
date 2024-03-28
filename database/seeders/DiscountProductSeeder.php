@@ -213,6 +213,16 @@ class DiscountProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now(),
         ]);
+        // 
+        DB::table('discount_products')->insert([
+            'product_id' => 23,
+            'main_price' => 150.00,
+            'discount_percent' => 10.00,
+            'discount_amount' => 15.00,
+            'discount_last_date' => now(),
+            'created_at' => now(),
+            'updated_at' => now(),
+        ]);
 
     }
 }

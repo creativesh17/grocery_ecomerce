@@ -928,7 +928,7 @@ class ProductSeeder extends Seeder
 		    ],
 
 
-             // 22
+            // 22
         	[
         		'sku' => 'AG6048',
 		        'is_top_product' => 1,
@@ -966,6 +966,52 @@ class ProductSeeder extends Seeder
                 'video_url' => null,
                 'creator' => null,
                 'slug' => Str::slug('Chocolate Cream Roll 1pcs'),
+                'status' => 1,
+                'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now(),
+		    ],
+
+
+            // 23
+        	[
+        		'sku' => 'AG6048',
+		        'is_top_product' => 1,
+		        'view_count' => 4,
+		        'product_name' => 'ALL Time Roma Cookies Family Pack',
+		        'product_url' => Str::slug('ALL Time Roma Cookies Family Pack'),
+		        'brand_id' => 38,
+                'selected_categories' => "[18, 35]",
+
+                'short_description' => '<ul><li><br><div class="full-description" itemprop="description">
+                <p>All Time Roma Cookies Family Pack- 180gm<br>Item code: 5500008451<br>Brand: All Time&nbsp;<br>Net weight: 180gm<br>Product type: Cookies&nbsp;</p><br></li></ul>',
+
+                'description' => '<div class="full-description" itemprop="description">
+                <p>All Time Roma Cookies Family Pack- 180gm<br>Item code: 5500008451<br>Brand: All Time&nbsp;<br>Net weight: 180gm<br>Product type: Cookies&nbsp;</p><p style="text-align: justify;"><span style="font-family: verdana, geneva;"><strong><span style="font-size: 10pt;"><span style="color: #ff0000; font-style: normal; font-variant: normal; letter-spacing: normal; line-height: normal; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; display: inline ! important; float: none; background-color: #ffffff;"><span style="color: #ff0000; font-size: 10pt; font-style: normal; font-variant: normal; letter-spacing: normal; line-height: normal; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; display: inline ! important; float: none; background-color: #ffffff;"><span style="color: #e36c0a; font-size: 14.6667px; font-style: normal; font-variant: normal; letter-spacing: normal; line-height: 16.8667px; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; display: inline ! important; float: none;"><span class="Apple-converted-space">Product Delivery Conditions:</span></span></span></span></span></strong></span></p><ul><ul><li style="text-align: justify;"><span style="font-size: 10pt; font-family: verdana, geneva;"><strong>To add more items of <strong>Daily Shopping</strong> to your cart, please <strong><a href="https://www.othoba.com/daily-shopping" target="_blank" rel="noopener"><span style="color: #ff0000; font-style: normal; font-variant: normal; letter-spacing: normal; line-height: normal; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; display: inline ! important; float: none; background-color: #ffffff;"><span style="color: #ff0000; font-style: normal; font-variant: normal; letter-spacing: normal; line-height: normal; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; display: inline !important; float: none; background-color: #ffffff;"><span style="color: #e36c0a; font-style: normal; font-variant: normal; letter-spacing: normal; line-height: 16.8667px; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; display: inline !important; float: none;"><span class="Apple-converted-space">Click here.</span></span></span></span></a></strong></strong></span><span style="font-size: 10pt; font-family: verdana, geneva;"><br></span></li><li style="text-align: justify;"><span style="font-size: 10pt; font-family: verdana, geneva;"><strong>Return/cancellation</strong>: No change will be applicable which are already delivered to customer. If product quality or quantity problem found then customer can return/cancel their order on delivery time with presence of delivery person.<br></span></li><li style="text-align: justify;"><span style="font-size: 10pt; font-family: verdana, geneva;"><span style="font-size: 10pt;"><span style="color: #ff0000; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; display: inline ! important; float: none; background-color: #ffffff;"><span style="color: #e36c0a; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 16.8667px; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; display: inline ! important; float: none;"><span class="Apple-converted-space"><strong>Note:</strong> Product delivery duration may vary due to product availability in stock.</span></span></span></span></span></li></ul></ul><p><br><br></p><p>&nbsp;</p><li style="text-align: justify; margin-bottom: 30px; list-style-type: none;"><span style="font-size: 10pt; font-family: verdana, geneva;"><span style="font-size: 10pt;"><span style="color: red; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; display: inline ! important; float: none; background-color: #ffffff;"><span style="color: red; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 16.8667px; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; display: inline ! important; float: none;"><span class="Apple-converted-space"><strong>Out of coverage area: </strong>Dhaka Cantonment Area ( ECB Chattar, Vashantec, Matikata), Uttara Sector 18, Khilkhet, Nikunjo, Sher E bangla Agriculture university, Sher-E-Bangla Nagar, Dhaka.</span></span></span></span></span></li><ul><li style="text-align: justify;"><span style="font-size: 10pt; font-family: verdana, geneva;"><span style="font-size: 10pt;"><span style="color: red; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; display: inline ! important; float: none; background-color: #ffffff;"><span style="color: red; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 16.8667px; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; display: inline ! important; float: none;"><span class="Apple-converted-space"><strong>Rajshahi City Coverage Area: </strong>Rajshahi Sadar, Bowalia Thana</span></span></span></span></span></li></ul>
+                </div>',
+
+                'specification' => "",
+
+                'image' => null,
+                'cost' => null,
+                'sales_price' => 150.00,
+                'call_for_price' => null,
+
+                'is_tba' => 0,
+                'is_pre_order' => 0,
+                'is_in_stock' => 1,
+                'low_stock' => 10,
+                'stock' => 80,
+                'width' => null,
+                'height' => null,
+                'depth' => null,
+                'weight' => null,
+                'page_title' => 'ALL Time Roma Cookies Family Pack',
+                'search_keywords' => 'ALL Time Roma Cookies Family Pack',
+                'meta_description' => 'ALL Time Roma Cookies Family Pack',
+                'schema_tag' => null,
+                'video_url' => null,
+                'creator' => null,
+                'slug' => Str::slug('ALL Time Roma Cookies Family Pack'),
                 'status' => 1,
                 'created_at' => Carbon::now(),
                 'updated_at' => Carbon::now(),

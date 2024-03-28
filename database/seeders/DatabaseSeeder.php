@@ -32,12 +32,12 @@ class DatabaseSeeder extends Seeder
         $this->call([
             BrandSeeder::class,
             CategorySeeder::class,
-            // TagSeeder::class,
+            TagSeeder::class,
             ProductSeeder::class,
             ProductImageSeeder::class,
             CategoryProductSeeder::class,
             DiscountProductSeeder::class,
-            // ProductTagSeeder::class,
+            ProductTagSeeder::class,
             // ProductVariantSeeder::class,
             // ProductVariantValueSeeder::class,
             // ProductVariantValueProductSeeder::class
