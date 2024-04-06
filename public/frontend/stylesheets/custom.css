@@ -30,13 +30,19 @@
 }
 
 
-.product-box {
+/* .product-box {
     height: 560px;
+    margin-bottom: 35px;
+   
+    border: 2px solid #e5e5e5;
+} */
+.product-box {
+    height: 487px;
     margin-bottom: 35px;
     /* width: 349px; */
     /* overflow: hidden; */
     border: 2px solid #e5e5e5;
-}
+  }
 
 .product-box .owl-nav {
 
@@ -195,7 +201,7 @@ th .wishlist_1 {
 
 .box-content {
     width: 100%;
-    margin-top: 100px;
+    margin-top: 11px;
 }
 
 .categoryWiseProduct .my-product-box {
@@ -413,4 +419,11 @@ span .error {
 .set-width {
     min-width: 200px;
     white-space: nowrap;
+}
+
+.imagebox .box-image {
+    margin-bottom: 5px;
+    line-height: 209px;
+    height: 209px;
+    overflow: hidden;
 }
