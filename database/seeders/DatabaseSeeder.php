@@ -30,18 +30,18 @@ class DatabaseSeeder extends Seeder
         // ProductImage::flushEventListeners();
 
         $this->call([
-            // BrandSeeder::class,
-            // CategorySeeder::class,
-            // TagSeeder::class,
-            // ProductSeeder::class,
-            // ProductImageSeeder::class,
-            // CategoryProductSeeder::class,
-            // DiscountProductSeeder::class,
-            // ProductTagSeeder::class,
+            BrandSeeder::class,
+            CategorySeeder::class,
+            TagSeeder::class,
+            ProductSeeder::class,
+            ProductImageSeeder::class,
+            CategoryProductSeeder::class,
+            DiscountProductSeeder::class,
+            ProductTagSeeder::class,
 
-            // ProductVariantSeeder::class,
-            // ProductVariantValueSeeder::class,
-            // ProductVariantValueProductSeeder::class,
+            ProductVariantSeeder::class,
+            ProductVariantValueSeeder::class,
+            ProductVariantValueProductSeeder::class,
 
             AccountLogSeeder::class,
             OrderSeeder::class,

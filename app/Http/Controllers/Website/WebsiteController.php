@@ -23,7 +23,8 @@ class WebsiteController extends Controller
         // Cart::destroy();
         // dd(Carbon::now()->subDay());
         $topCateAll = Category::where('is_top_category', 1)->orderBy("id","asc")->limit(8)->get();
-        return view('website.layouts.home', compact('topCateAll'));
+        $specialProducts = Product::has('discount')->limit(10)->get();
+        return view('website.layouts.home', compact('topCateAll', 'specialProducts'));
     }
 
     public function aboutus() {
@@ -42,9 +43,10 @@ class WebsiteController extends Controller
         $min = rand(1, 100);
         $max = rand(1000, 900000);
         $category = Category::where('slug', $slug)->first();
+        $brandAll = Brand::where('status', 1)->latest()->limit(222)->get();
         if ($category) {
             $categories = $category->products()->paginate();
-            return view('website.pages.category_products', compact('category', 'categories', 'min', 'max'));
+            return view('website.pages.category_products', compact('category', 'categories', 'min', 'max', 'brandAll'));
         }
 
         return "404 not found";
@@ -72,17 +74,9 @@ class WebsiteController extends Controller
 
         $revs = ProductReview::where('product_id', $id)->where('status', 1)->get();
         $revs = $product->reviews ?: null;
-        // $countRatings = 0;
-        // foreach ($revs as $value) {
-        //     $sumStar += $value->star;
-        //     $countRatings = $countRatings + 1;
-        // }
-        // $avg = $sumStar / $countRatings;
-        // return $avg;
+        
+        $brandAlls = Brand::where('status', 1)->where('url', '!=' , NULL)->latest()->limit(12)->get();
 
-        // foreach ($product->categories as $category) {
-        //  dd($category->name);
-        // }
         $variants = $product->productvariants()->get()->unique('title');
         $varaintValues = [];
         foreach ($variants as $key => $variant) {
@@ -91,7 +85,7 @@ class WebsiteController extends Controller
         }
         // return $product;
         // dd($product);
-        return view('website.pages.product-details', compact('product', 'category',  'revs', 'varaintValues'));
+        return view('website.pages.product-details', compact('product', 'category',  'revs', 'varaintValues', 'brandAlls'));
         // return view('frontend.product-details', compact('product'));
     }
 
@@ -131,6 +125,11 @@ class WebsiteController extends Controller
         }
     }    
 
+    public function sitemap(Request $request) {
+        $categories = Category::where('status', 1)->orderBy('name', 'ASC')->get()->unique('name');
+        return view('website.pages.sitemap', compact('categories'));
+    }
+
 
     public function products_price_range() {
 
@@ -165,17 +164,16 @@ class WebsiteController extends Controller
     }
 
 
-    public function productsByBrands(Request $request, $id) {
-        // dd(request()->all());
-        // $products = Product::skip(rand(500,900))->limit(10)->get();
-        
+    public function productsByBrands(Request $request, $url) {
 
-        $brand = Brand::where('id', $id)->first();
+        $latestProducts = Product::select('id', 'product_name', 'product_url', 'brand_id', 'selected_categories')
+        ->where('status', 1)->limit(10)->latest()->get();
+
+        $brand = Brand::where('url', $url)->first();
         $products = $brand->products()->where('status', 1)->paginate(12);
         // dd($products);
 
-        return view('website.pages.brand_products', compact('products'));
-        // return view('website.components.product_box', compact('products'));
+        return view('website.pages.brand_products', compact('products', 'latestProducts'));
 
     }
 

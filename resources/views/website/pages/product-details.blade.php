@@ -96,9 +96,9 @@
         </ul>
 
         <div class="col-md-12 ">
-            @php
+            {{-- @php
                 $brandAlls = \App\Models\Brand::where('status', 1)->latest()->limit(12)->get();
-            @endphp
+            @endphp --}}
             <div class="col-md-12 bread-brand">
                 <ul class="child-list my-2 d-flex flex-wrap gap-2">
                     @foreach ($brandAlls as $brand)

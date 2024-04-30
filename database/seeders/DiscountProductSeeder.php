@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Schema;
 
 class DiscountProductSeeder extends Seeder
 {
@@ -14,6 +15,7 @@ class DiscountProductSeeder extends Seeder
      */
     public function run() {
         
+        Schema::disableForeignKeyConstraints();
         DB::table('discount_products')->truncate();
 
         DB::table('discount_products')->insert([
@@ -225,6 +227,8 @@ class DiscountProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now(),
         ]);
+
+        Schema::enableForeignKeyConstraints();
 
     }
 }

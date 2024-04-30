@@ -37,9 +37,9 @@
 
 {{-- Special Offer --}}
 {{-- countdown available at Hungery Coder --}}
-@php
+{{-- @php
     $specialProducts = \App\Models\Product::has('discount')->get();
-@endphp
+@endphp --}}
 
 <section class="flat-imagebox style3">
     <div class="container">
@@ -50,8 +50,6 @@
 
                     @foreach ($specialProducts as $key => $specialProduct)
                         @php
-                            // dd($specialProducts->toArray());
-                            // $currentTime = Carbon\Carbon::parse(now());
                             $discountLastDate = Carbon\Carbon::parse($specialProduct->discount->discount_last_date);
                             // $totalTimeOverInDays = $currentTime->diffInDays($discountLastDate);\
                         @endphp
