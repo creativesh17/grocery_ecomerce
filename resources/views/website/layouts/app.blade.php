@@ -138,6 +138,17 @@
             });
         </script>
     @endif
+    @if (Session::has('warning'))
+        <script>
+            Swal.fire({
+                position: "top-end",
+                icon: "warning",
+                title: "Oops...",
+                text: "{{ session('warning') }}",
+                timer: 3000
+            });
+        </script>
+    @endif
 
 
     <script type="text/javascript" src="{{ asset('frontend') }}/javascript/easing.js"></script>

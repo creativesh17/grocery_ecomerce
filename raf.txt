@@ -140,7 +140,7 @@ rm -rf .git*
 
 
 
-1. orWhere from route product_url and details page
+1. orWhere from route product_url   and details page
 2. search a tag display=block
     .search_list_product_title {
         display: block;
@@ -174,3 +174,21 @@ rm -rf .git*
 12. footer kaj custom.css soho
 
 13. category images thik koresi
+
+//////////////////////////////////////////////
+
+14. sweet alert OK button .... 
+15. add to cart number_format() and 1.header.blade.php and  2.  /cartitems
+    custom.css
+    include // dorkar nai
+16. view cart page - update dui jaigai
+
+
+///////////////////////////////////////////////
+
+17. view cart page - delivery charge fix koresi
+18. proceed to checkout page - charge fix koresi
+    order address - division and district - database and controller with requirement
+    super modify design
+
+///////////////////////////////////////////////
