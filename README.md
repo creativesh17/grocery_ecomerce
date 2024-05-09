@@ -59,15 +59,3 @@ This is an ecommerce project developed using #laravel #vuejs #vuex #livewire. Th
 - View and manage orders.
 - View and manage customers.
 
-## Contributors
-<br>
-
-<br>
-
-> <br>
-> <img src="#" alt="alt text" width="50" height="50" > <br> 
-> <a href="https://github.com/creativesh17">Almas Khan</a> <br>
-> Software Engineer ( Tech Park IT )
-> <br>
-> <br>
-

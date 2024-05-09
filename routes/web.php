@@ -108,7 +108,6 @@ Route::group(['prefix' => '', 'namespace' => "Controllers"], function () {
     })->name('route name');
 
 
-
     // Route::get('/checkout', 'FrontendController@checkout');
     // Route::post('/checkout', 'FrontendController@confirm_order');
     // Route::get('/order-complete/{id}','FrontendController@order_complete');
